@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-container">
+    <!--sidebar-->
+    <div class="sidebar">
+        <!--profile-->
+        <div class="profile">
+            <img src="keerti.image.jpeg"alt=""><!--image is an inline element-->
+            <h2>Keerti Yadav</h2><!--h2 tag humara inline nhi h par usme andar text humara inline h and text humara apne border ke respect me centre hua h kyuki wo inline element h-->
+            <p>Frontend Developer</p>
+        </div>
+        <!-- text-align: center;== jo bhi aapke inline element honge unko centre kar dega-->
+
+        <!--contact-->
+        <div class="contact">
+            <div class="email">
+                <h3 class="label">Email</h3>
+                <a href="mailto:keertiyadav065@gmail.com" class="value">keertiyadav065@gmail.com</a>
+            </div>
+            <div class="phone">
+            <h3 class="label">Phone</h3>
+            <a href="tel:8707763942" class="value">8707763942</a>
+            </div>
+
+            <div class="location">
+                <h3 class="label">Location</h3>
+                <p class="value">Lucknow</p>
+            </div>
+            
+        
+        </div>
+
+        <!--social media-->
+        <div class="social"><!--anchor tag are inline element-->
+        <a href="https://github.com/KeertiYadav-code"><img src="https://simpleicons.org/icons/github.svg" alt="github"></a>
+         <a href="https://www.linkedin.com/in/keerti-yadav-dev"><img src="https://www.svgrepo.com/show/144030/linkedin-square-logo.svg" alt="linkedin"></a>
+        </div>
+    </div>
+<!--agar mere paas koi block level elemet h jaise upar div uske andar mera inline element present h usko agar maine text align centre kar diya toh jo bhi elemt present honge wo centre pe chale jayennge sirf horizontal axis ke arround-->
+
+    <!--main-content-->
+    <div CLASS="main-content">
+
+        <!--navigation-->
+        <div id="navigation">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">skills</a>
+            <a href="#education">Education</a>
+            <a href="#portfolio">Portfolio</a>
+        </nav>
+        </div>
+
+
+        <!--about me-->
+        <div id="about">
+            <h2 class="heading">About Me</h2>
+            <div class="line"></div>
+            <p class="content">I am creative and passionate Frontend Developer with a keen eye for detail and a love for building beautiful, functional and user-friendly web experiences. My journey in web development is driven by a desire tp turn complex problems into simple , elegant solutions. I specialize in modern web technologies and am always eager and adapt to the ever-evolving digital landscape.</p>
+
+        </div>
+
+        <!--skills-->
+        <div id="skills">
+            <h2 class="heading">My Skills</h2>
+            <div class="line"></div>
+        </div>
+
+
+        <!--Education-->
+        <div id="education"></div>
+
+
+        <!--portfolio-->
+        <div id="portfolio"></div>
+    </div>
+    </div>
+    <!--jo humare block level element hote h unke andar humne do block level element present  h jinki humne height width de rakhi h toh mai unpe margin lagaunga auto toh wo automatically center ho jayenge-->
+</body>
+</html>

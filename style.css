@@ -165,5 +165,12 @@ nav a{
 }
 
 #about{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+/*skills section*/
+
+.grid-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }

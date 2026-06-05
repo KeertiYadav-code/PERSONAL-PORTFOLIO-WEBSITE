@@ -5,20 +5,26 @@ box-sizing: border-box;
 }
 
 body{
-    background-color: #1e1e1e;
+  background: radial-gradient(circle at top, #1f1f1f, #0d0d0d);
     font-family: sans-serif;
     color: #a0a0a0;
     line-height: 1.6;
    
 }
+
+
+
 .main-container{
     display: grid;
     max-width: 1200px;
     grid-template-columns: 350px 1fr;
-    gap: 40px;
-    padding-top: 40px;
+    gap: 50px;
+    padding-top: 60px;
      margin: auto;
+    
 }
+
+
 
 .sidebar{
     height: 90vh;
@@ -26,12 +32,15 @@ body{
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     padding: 40px;
+    position: sticky;
+    top: 40px;
+border: 1px solid rgba(255,255,255,0.08);
 
 }
 
 .main-content{
     background-color: #2a2a2a;
-    height: 90vh;
+  gap: 50px;
  border: 1px solid #3a3a3a;
     border-radius: 16px;
   padding: 30px;
@@ -171,6 +180,192 @@ nav a{
 /*skills section*/
 
 .grid-container{
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
 }
+
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%) ;
+}
+
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.item h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/*Education*/
+#education{
+    margin-top: 30px;
+}
+
+
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.college{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.work{
+    color: #a0a0a0;
+}
+
+.edfirst, .edsecon{
+    margin-bottom: 30px;
+    position: relative;
+     padding-left: 25px;
+  
+}
+
+.goal{
+    height: 15px;
+    width: 15px;
+    border: 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 1;
+}
+
+.edtech{
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    border: 2px solid #3a3a3a;
+    left: 5px;
+}
+
+/*Portfolio*/
+
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.project img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    overflow: hidden;
+    transition: 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card{
+    padding: 20px;
+}
+
+.card h3{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+
+.card p{
+    color: #a0a0a0;
+    line-height: 1.6;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.card span{
+    background-color: rgba(255, 191, 0, 0.1);
+    color: #FFBF00;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item, .project{
+    transition: all 0.3s ease;
+}
+
+.item:hover{
+    transform: translateY(-8px) scale(1.05);
+}
+
+.project:hover{
+    transform: translateY(-10px) scale(1.02);
+}
+
+
+.project, .item, .sidebar, .main-content{
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.project img{
+    transition: transform 0.4s ease;
+}
+
+.project:hover img{
+    transform: scale(1.1);
+}
+
+
+.item:hover{
+    box-shadow: 0 0 20px rgba(255, 191, 0, 0.2);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+

@@ -29,7 +29,7 @@ body{
 .sidebar{
     height: 90vh;
     background-color: #2a2a2a;
-    border: 1px solid #3a3a3a;
+ 
     border-radius: 16px;
     padding: 40px;
     position: sticky;
@@ -166,7 +166,7 @@ nav a{
     width: 60px;
     height: 5px;
     background-color: #FFBF00;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .content{
@@ -208,7 +208,7 @@ nav a{
 }
 
 .item:hover{
-    transform: scale(1.1);
+    transform: translateY(-8px) scale(1.05);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -294,13 +294,13 @@ nav a{
 .project{
     background-color: #1e1e1e;
     border-radius: 12px;
-    border: 1px solid #3a3a3a;
+    border: 1px solid #4a4a4a;
     overflow: hidden;
     transition: 0.5s ease, box-shadow 0.5s ease;
 }
 
 .project:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -337,14 +337,6 @@ nav a{
 
 .item, .project{
     transition: all 0.3s ease;
-}
-
-.item:hover{
-    transform: translateY(-8px) scale(1.05);
-}
-
-.project:hover{
-    transform: translateY(-10px) scale(1.02);
 }
 
 

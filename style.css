@@ -44,6 +44,7 @@ border: 1px solid rgba(255,255,255,0.08);
  border: 1px solid #3a3a3a;
     border-radius: 16px;
   padding: 30px;
+  margin-bottom: 55px;
 }
 
 .profile{
@@ -296,7 +297,7 @@ nav a{
     border-radius: 12px;
     border: 1px solid #4a4a4a;
     overflow: hidden;
-    transition: 0.5s ease, box-shadow 0.5s ease;
+     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .project:hover{
@@ -361,3 +362,117 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
+@media (max-width: 768px){
+
+    .sidebar{
+        padding: 20px;
+    }
+
+    .main-content{
+        padding: 20px;
+    }
+
+    .heading{
+        font-size: 1.6rem;
+    }
+
+    .profile img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .project img{
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .heading{
+        font-size: 1.4rem;
+    }
+
+    .content{
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 992px){
+
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .sidebar{
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.sidebar{
+    width: 100%;
+}
+.project img{
+    display: block;
+}
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #FFBF00;
+    color: #1e1e1e;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    transition: all 0.3s ease;
+}
+
+#topBtn:hover{
+    transform: translateY(-3px);
+}
